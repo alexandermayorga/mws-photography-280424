@@ -1,12 +1,20 @@
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 import {
+  ContainerRect,
+  Slide,
   isImageFitCover,
   isImageSlide,
   useLightboxProps,
   useLightboxState,
 } from "yet-another-react-lightbox";
 
-function isNextJsImage(slide) {
+interface NextJsImageTypes {
+  slide: any;
+  offset: number;
+  rect: ContainerRect;
+}
+
+function isNextJsImage(slide: Slide) {
   return (
     isImageSlide(slide) &&
     typeof slide.width === "number" &&
@@ -14,7 +22,7 @@ function isNextJsImage(slide) {
   );
 }
 
-export default function NextJsImage({ slide, offset, rect }) {
+export default function NextJsImage({ slide, offset, rect }: NextJsImageTypes) {
   const {
     on: { click },
     carousel: { imageFit },
@@ -28,13 +36,19 @@ export default function NextJsImage({ slide, offset, rect }) {
 
   const width = !cover
     ? Math.round(
-        Math.min(rect.width, (rect.height / slide.height) * slide.width),
+        Math.min(
+          rect.width,
+          (rect.height / (slide.height ?? 1)) * (slide.width ?? 1),
+        ),
       )
     : rect.width;
 
   const height = !cover
     ? Math.round(
-        Math.min(rect.height, (rect.width / slide.width) * slide.height),
+        Math.min(
+          rect.height,
+          (rect.width / (slide.width ?? 1)) * (slide.height ?? 1),
+        ),
       )
     : rect.height;
 
