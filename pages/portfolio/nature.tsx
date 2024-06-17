@@ -9,7 +9,8 @@ import "yet-another-react-lightbox/styles.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import NextJsImage from "../../components/NextJsImage";
+import NextJsImage from "@/components/NextJsImage";
+import FadeInUpWhenVisible from "@/components/FadeInUpWhenVisible";
 
 // https://unsplash.com/photos/person-holding-lens-during-daytime-oGrOhXJaHME
 // https://unsplash.com/photos/purple-petaled-flowers-near-trees-3VBg9zmZUOY
@@ -65,62 +66,62 @@ export default function Nature() {
           <h1 className="col-span-12 text-5xl">Nature</h1>
 
           <div className="mx-auto my-14 grid max-w-md auto-rows-[250px] grid-cols-1 gap-16  md:max-w-4xl md:grid-cols-2 lg:max-w-full lg:grid-cols-2">
-            <div className="tall row-span-3 overflow-hidden bg-black">
+            <FadeInUpWhenVisible className="tall row-span-3 overflow-hidden bg-black">
               <Image
                 src={gallery[6]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
                 onClick={() => handleImageclick(6)}
               ></Image>
-            </div>
-            <div className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
+            </FadeInUpWhenVisible>
+            <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
                 src={gallery[8]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
                 onClick={() => handleImageclick(8)}
               ></Image>
-            </div>
-            <div className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black">
+            </FadeInUpWhenVisible>
+            <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
                 src={gallery[4]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
                 onClick={() => handleImageclick(4)}
               ></Image>
-            </div>
-            <div className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
+            </FadeInUpWhenVisible>
+            <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
                 src={gallery[3]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
                 onClick={() => handleImageclick(3)}
               ></Image>
-            </div>
-            <div className="tall row-span-4 flex flex-col items-center justify-center overflow-hidden bg-black">
+            </FadeInUpWhenVisible>
+            <FadeInUpWhenVisible className="tall row-span-4 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
                 src={gallery[5]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
                 onClick={() => handleImageclick(5)}
               ></Image>
-            </div>
-            <div className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
+            </FadeInUpWhenVisible>
+            <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
                 src={gallery[0]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
                 onClick={() => handleImageclick(0)}
               ></Image>
-            </div>
-            <div className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
+            </FadeInUpWhenVisible>
+            <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
                 src={gallery[1]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover object-top hover:opacity-80"
                 onClick={() => handleImageclick(1)}
               ></Image>
-            </div>
+            </FadeInUpWhenVisible>
           </div>
 
           <div className="flex justify-between gap-x-8">

@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import bgImg from "/public/img/gift-habeshaw-0nNOc6OAwLI-unsplash_50.jpg";
 // Pic from: https://unsplash.com/photos/man-facing-sideways-0nNOc6OAwLI
@@ -11,6 +12,12 @@ const quattrocento_sans = Quattrocento_Sans({
   subsets: ["latin"],
   variable: "--font-quattrocento-sans",
 });
+
+const variants = {
+  hidden: { opacity: 0, x: 0, y: 200 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: 200 },
+};
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
@@ -60,9 +67,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </nav>
           </header> */}
-
-          {children}
-
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={router.route}
+              variants={variants}
+              initial="hidden"
+              animate="enter"
+              exit="exit"
+              transition={{ type: "easeInOut", duration: "0.75" }}
+            >
+              {children}
+            </motion.div>
+          </AnimatePresence>
           <footer className="container mx-auto px-4 pb-8 text-center text-white lg:text-left">
             <p className="text-sm">&copy; 2035 by Hunter Marvel.</p>
           </footer>
