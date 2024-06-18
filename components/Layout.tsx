@@ -85,7 +85,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               initial="hidden"
               animate="enter"
               exit="exit"
-              transition={{ type: "easeInOut", duration: "0.75" }}
+              transition={{ type: "easeInOut", duration: "0.5" }}
             >
               {children}
             </motion.div>

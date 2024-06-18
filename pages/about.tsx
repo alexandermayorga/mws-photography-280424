@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import bioPic from "/public/img/erik-mclean-2Wv9VnwzeeI-unsplash_50.jpg";
 import Image from "next/image";
+import Head from "next/head";
 
 //https://unsplash.com/photos/woman-using-camera-2Wv9VnwzeeI
 
@@ -8,6 +9,9 @@ export default function About() {
   return (
     <>
       <Layout>
+        <Head>
+          <title>About | Photography Site Template</title>
+        </Head>
         <main className="container mx-auto px-8">
           <div className="divider block w-full py-14"></div>
 
@@ -33,8 +37,10 @@ export default function About() {
             <div className="col-span-10 col-start-2 flex flex-col items-center justify-center overflow-hidden bg-black lg:col-span-3 lg:col-start-9">
               <Image
                 src={bioPic}
-                alt={""}
+                alt={"Selfie"}
+                priority={true}
                 className="h-full w-full object-cover transition hover:opacity-80"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw,"
               ></Image>
             </div>
           </div>

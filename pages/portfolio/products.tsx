@@ -43,6 +43,7 @@ import galleryItem12 from "/public/img/products/d-l-samuels-lvIIWY4DWR0-unsplash
 import galleryItem13 from "/public/img/products/badreddine-farhi-sR2zmFgZf3A-unsplash.jpg";
 import galleryItem14 from "/public/img/products/alvaro-serrano-pFLNV4gkXsc-unsplash.jpg";
 import { useState } from "react";
+import Head from "next/head";
 
 const gallery = [
   galleryItem1,
@@ -73,6 +74,9 @@ export default function Products() {
   return (
     <>
       <Layout>
+        <Head>
+          <title>Portfolio - Products | Photography Site Template</title>
+        </Head>
         <main className="container mx-auto px-8">
           <div className="divider block w-full py-10 md:py-14"></div>
           <h1 className="col-span-12 text-5xl">Products</h1>
@@ -80,6 +84,8 @@ export default function Products() {
           <div className="mx-auto my-14 grid max-w-md auto-rows-[250px] grid-cols-1 gap-16  md:max-w-4xl md:grid-cols-2 lg:max-w-full lg:grid-cols-2">
             <FadeInUpWhenVisible className="tall row-span-3 overflow-hidden bg-black">
               <Image
+                priority={true}
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[2]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
@@ -88,6 +94,7 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[8]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
@@ -96,6 +103,7 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[4]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
@@ -104,6 +112,7 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[11]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
@@ -112,6 +121,7 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[0]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
@@ -120,6 +130,7 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[13]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
@@ -128,6 +139,7 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[6]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover object-top hover:opacity-80"
@@ -136,6 +148,7 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[3]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover object-bottom hover:opacity-80"
@@ -144,6 +157,7 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[12]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
@@ -152,6 +166,7 @@ export default function Products() {
             </FadeInUpWhenVisible>{" "}
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[5]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"

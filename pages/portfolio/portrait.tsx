@@ -33,6 +33,7 @@ import galleryItem7 from "/public/img/portrait/mahdi-chaghari - h-O5_xkO0g-unspl
 import galleryItem8 from "/public/img/portrait/olena-bohovyk-h6h4udQFWUc-unsplash.jpg";
 import galleryItem9 from "/public/img/portrait/sinitta-leunen-ni7tvb9vG04-unsplash.jpg";
 import { useState } from "react";
+import Head from "next/head";
 
 const gallery = [
   galleryItem1,
@@ -58,6 +59,9 @@ export default function Portrait() {
   return (
     <>
       <Layout>
+        <Head>
+          <title>Portfolio - Portraits | Photography Site Template</title>
+        </Head>
         <main className="container mx-auto px-8">
           <div className="divider block w-full py-10 md:py-14"></div>
           <h1 className="col-span-12 text-5xl">Portraits</h1>
@@ -65,6 +69,8 @@ export default function Portrait() {
           <div className="mx-auto my-14 grid max-w-md auto-rows-[250px] grid-cols-1 gap-16  md:max-w-4xl md:grid-cols-2 lg:max-w-full lg:grid-cols-2">
             <FadeInUpWhenVisible className="tall row-span-3 overflow-hidden bg-black ">
               <Image
+                priority={true}
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[4]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
@@ -73,6 +79,7 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[0]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover object-top hover:opacity-80"
@@ -81,6 +88,7 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[7]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover object-top hover:opacity-80"
@@ -89,6 +97,7 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[8]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover object-top hover:opacity-80"
@@ -97,6 +106,7 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[5]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
@@ -105,6 +115,7 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[3]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
@@ -113,6 +124,7 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[6]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover object-top hover:opacity-80"
@@ -121,6 +133,7 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[1]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"

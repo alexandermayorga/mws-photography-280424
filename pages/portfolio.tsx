@@ -5,6 +5,7 @@ import Link from "next/link";
 import protraitPic from "/public/img/portfolio/mae-mu-XTztXbv6gMs-unsplash-resized_50.jpg";
 import naturePic from "/public/img/portfolio/taneli-lahtinen-fQ2YX56wQ-Y-unsplash_50.jpg";
 import productsPic from "/public/img/portfolio/mae-mu-XTztXbv6gMs-unsplash_50.jpg";
+import Head from "next/head";
 
 // Unsplash Pics from:
 // https://unsplash.com/photos/three-ginger-beer-bottles-XTztXbv6gMs
@@ -15,6 +16,9 @@ export default function Portfolio() {
   return (
     <>
       <Layout>
+        <Head>
+          <title>Portfolio | Photography Site Template</title>
+        </Head>
         <main className="container mx-auto px-8">
           <div className="divider block w-full py-14"></div>
           {/* GRID */}
