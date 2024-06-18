@@ -6,6 +6,7 @@ import bgImg from "/public/img/gift-habeshaw-0nNOc6OAwLI-unsplash_50.jpg";
 
 import { Quattrocento_Sans } from "next/font/google";
 import Header from "./Header";
+import Head from "next/head";
 
 const quattrocento_sans = Quattrocento_Sans({
   weight: ["400", "700"],
@@ -24,6 +25,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
+      <Head>
+        <title>Photography Site Template</title>
+        <meta
+          name="description"
+          content="Photography Site Template built with Next JS, React, Typescript, TailwindCSS, Framer Motion, and React Hook Form"
+        />
+      </Head>
       <div
         className={`relative min-h-screen bg-black text-white ${quattrocento_sans.variable} font-sans`}
       >
@@ -32,7 +40,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             src={bgImg}
             alt="Placeholder"
             width={1580}
+            height={946}
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw,"
             className="absolute inset-0 mx-auto h-full w-full max-w-[1580px] -scale-x-100 object-cover"
+            quality={80}
           />
         )}
         <div className="relative z-10">
