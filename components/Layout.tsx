@@ -15,9 +15,9 @@ const quattrocento_sans = Quattrocento_Sans({
 });
 
 const variants = {
-  hidden: { opacity: 0, x: 0, y: 200 },
+  hidden: { opacity: 0, x: 0, y: 100 },
   enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 0, y: 200 },
+  exit: { opacity: 0, x: 0, y: 100 },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -85,7 +85,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               initial="hidden"
               animate="enter"
               exit="exit"
-              transition={{ type: "easeInOut", duration: "0.5" }}
+              transition={{ type: "easeIn", duration: "0.6" }}
             >
               {children}
             </motion.div>
