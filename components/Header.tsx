@@ -20,16 +20,24 @@ const Header = () => {
   return (
     <header className="container mx-auto px-8">
       <nav className="flex items-center justify-between pb-2 pt-8">
-        <Link href="/" className="text-3xl text-white">
+        <Link href="/" className="text-3xl text-white" aria-label="Home">
           HMP
         </Link>
 
         {/* Social Icons for Mobile */}
         <div className="flex items-center space-x-4 text-2xl md:hidden">
-          <Link href="#" className="text-white hover:text-gray-300">
+          <Link
+            href="#"
+            className="text-white hover:text-gray-300"
+            aria-label="Facebook"
+          >
             <FaFacebookF />
           </Link>
-          <Link href="#" className="text-white hover:text-gray-300">
+          <Link
+            href="#"
+            className="text-white hover:text-gray-300"
+            aria-label="Instagram"
+          >
             <FaInstagram />
           </Link>
         </div>
@@ -46,10 +54,18 @@ const Header = () => {
             Contact
           </Link>
           <div className="flex items-center space-x-4 text-2xl">
-            <Link href="#" className="text-white hover:text-gray-300">
+            <Link
+              href="#"
+              className="text-white hover:text-gray-300"
+              aria-label="Facebook"
+            >
               <FaFacebookF />
             </Link>
-            <Link href="#" className="text-white hover:text-gray-300">
+            <Link
+              href="#"
+              className="text-white hover:text-gray-300"
+              aria-label="Instagram"
+            >
               <FaInstagram />
             </Link>
           </div>
@@ -60,6 +76,7 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             className="text-white focus:outline-none"
+            aria-label="Toggle menu"
           >
             <svg
               className="h-8 w-8"
@@ -86,6 +103,7 @@ const Header = () => {
         <button
           onClick={toggleMenu}
           className="absolute right-4 top-8 text-white focus:outline-none"
+          aria-label="Close menu"
         >
           <svg
             className="h-8 w-8"
@@ -103,13 +121,19 @@ const Header = () => {
           </svg>
         </button>
         <div className="flex flex-col items-center space-y-6 text-2xl text-white">
-          <Link href="/" className={getLinkClass("/")} onClick={toggleMenu}>
+          <Link
+            href="/"
+            className={getLinkClass("/")}
+            onClick={toggleMenu}
+            aria-label="Home"
+          >
             Home
           </Link>
           <Link
             href="/portfolio"
             className={getLinkClass("/portfolio")}
             onClick={toggleMenu}
+            aria-label="Portfolio"
           >
             Portfolio
           </Link>
@@ -117,6 +141,7 @@ const Header = () => {
             href="/about"
             className={getLinkClass("/about")}
             onClick={toggleMenu}
+            aria-label="About"
           >
             About
           </Link>
@@ -124,6 +149,7 @@ const Header = () => {
             href="/contact"
             className={getLinkClass("/contact")}
             onClick={toggleMenu}
+            aria-label="Contact"
           >
             Contact
           </Link>
