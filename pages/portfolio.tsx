@@ -29,6 +29,10 @@ export default function Portfolio() {
                 src={protraitPic}
                 alt="Portrait Photography"
                 className="absolute z-0 h-full w-full object-cover transition duration-700 ease-in-out group-hover:scale-110"
+                priority={true}
+                sizes="(max-width: 373) 100vw,(max-width: 576) 100vw,(max-width: 746) 100vw,(max-width: 918) 100vw,(max-width: 1024) 100vw,(max-width: 1150) 100vw"
+                width={459}
+                height={552}
               ></Image>
               <h2 className="relative z-10 flex h-full w-full items-center justify-center bg-black bg-opacity-45 text-5xl tracking-wider group-hover:bg-opacity-55 ">
                 Portraits
@@ -43,6 +47,9 @@ export default function Portfolio() {
                 src={naturePic}
                 alt="Nature Photography"
                 className="absolute z-0 h-full w-full object-cover transition duration-700 ease-in-out group-hover:scale-110"
+                sizes="(max-width: 373) 100vw,(max-width: 576) 100vw,(max-width: 746) 100vw,(max-width: 918) 100vw,(max-width: 1024) 100vw,(max-width: 1150) 100vw"
+                width={459}
+                height={552}
               ></Image>
               <h2 className="relative z-10 flex h-full w-full items-center justify-center bg-black bg-opacity-45 text-5xl tracking-wider group-hover:bg-opacity-55">
                 Nature
@@ -57,6 +64,9 @@ export default function Portfolio() {
                 src={productsPic}
                 alt="Products Photography"
                 className="absolute z-0 h-full w-full object-cover transition duration-700 ease-in-out group-hover:scale-110"
+                sizes="(max-width: 373) 100vw,(max-width: 576) 100vw,(max-width: 746) 100vw,(max-width: 918) 100vw,(max-width: 1024) 100vw,(max-width: 1150) 100vw"
+                width={459}
+                height={552}
               ></Image>
               <h2 className="relative z-10 flex h-full w-full items-center justify-center bg-black bg-opacity-45 text-5xl tracking-wider group-hover:bg-opacity-55">
                 Products
