@@ -84,6 +84,8 @@ export default function Products() {
           <div className="mx-auto my-14 grid max-w-md auto-rows-[250px] grid-cols-1 gap-16  md:max-w-4xl md:grid-cols-2 lg:max-w-full lg:grid-cols-2">
             <FadeInUpWhenVisible className="tall row-span-3 overflow-hidden bg-black">
               <Image
+                width={704}
+                height={878}
                 priority={true}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[2]}
@@ -94,6 +96,8 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                width={704}
+                height={504}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[8]}
                 alt={""}
@@ -103,6 +107,8 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                width={704}
+                height={878}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[4]}
                 alt={""}
@@ -112,6 +118,8 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                width={704}
+                height={878}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[11]}
                 alt={""}
@@ -121,6 +129,8 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                width={704}
+                height={504}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[0]}
                 alt={""}
@@ -130,6 +140,8 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                width={704}
+                height={504}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[13]}
                 alt={""}
@@ -139,6 +151,8 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                width={704}
+                height={878}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[6]}
                 alt={""}
@@ -148,6 +162,8 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                width={704}
+                height={504}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[3]}
                 alt={""}
@@ -157,6 +173,8 @@ export default function Products() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                width={704}
+                height={504}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[12]}
                 alt={""}
@@ -166,6 +184,8 @@ export default function Products() {
             </FadeInUpWhenVisible>{" "}
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black">
               <Image
+                width={704}
+                height={504}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[5]}
                 alt={""}

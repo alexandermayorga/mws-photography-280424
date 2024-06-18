@@ -39,6 +39,8 @@ export default function About() {
                 src={bioPic}
                 alt={"Selfie"}
                 priority={true}
+                width={356}
+                height={534}
                 className="h-full w-full object-cover transition hover:opacity-80"
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw,"
               ></Image>

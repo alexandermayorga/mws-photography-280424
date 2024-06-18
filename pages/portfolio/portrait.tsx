@@ -70,6 +70,8 @@ export default function Portrait() {
             <FadeInUpWhenVisible className="tall row-span-3 overflow-hidden bg-black ">
               <Image
                 priority={true}
+                width={704}
+                height={878}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[4]}
                 alt={""}
@@ -79,6 +81,8 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                width={704}
+                height={504}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[0]}
                 alt={""}
@@ -88,6 +92,8 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                width={704}
+                height={878}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[7]}
                 alt={""}
@@ -97,6 +103,8 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                width={704}
+                height={878}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[8]}
                 alt={""}
@@ -106,6 +114,8 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="tall row-span-3 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                width={704}
+                height={878}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[5]}
                 alt={""}
@@ -115,6 +125,8 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                width={704}
+                height={504}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[3]}
                 alt={""}
@@ -124,6 +136,8 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                width={704}
+                height={504}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[6]}
                 alt={""}
@@ -133,6 +147,8 @@ export default function Portrait() {
             </FadeInUpWhenVisible>
             <FadeInUpWhenVisible className="short row-span-2 flex flex-col items-center justify-center overflow-hidden bg-black ">
               <Image
+                width={704}
+                height={504}
                 sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[1]}
                 alt={""}
