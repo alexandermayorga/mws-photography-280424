@@ -42,7 +42,7 @@ export default function About() {
                 width={356}
                 height={534}
                 className="h-full w-full object-cover transition hover:opacity-80"
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw,"
+                sizes="(max-width: 640px) 75vw, (max-width: 767px) 75vw, (max-width: 1023px) 60vw, (max-width: 1279px) 33vw, 33vw"
               ></Image>
             </div>
           </div>

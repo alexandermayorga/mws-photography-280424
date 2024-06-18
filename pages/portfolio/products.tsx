@@ -186,7 +186,7 @@ export default function Products() {
               <Image
                 width={704}
                 height={504}
-                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 100vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
+                sizes="(max-width: 525px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1366px) 50vw, (max-width: 1600px) 100vw, (max-width: 1920px) 100vw"
                 src={gallery[5]}
                 alt={""}
                 className="h-full w-full cursor-pointer object-cover hover:opacity-80"
