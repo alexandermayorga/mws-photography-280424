@@ -34,7 +34,7 @@ export default function About() {
                 earum esse, qui perspiciatis?
               </p>
             </div>
-            <div className="col-span-10 col-start-2 flex flex-col items-center justify-center overflow-hidden bg-black lg:col-span-3 lg:col-start-9">
+            <div className="col-span-10 col-start-2 flex flex-col items-center justify-center overflow-hidden bg-black lg:col-span-4 lg:col-start-8 xl:col-span-3 xl:col-start-9">
               <Image
                 src={bioPic}
                 alt={"Selfie"}
@@ -42,7 +42,7 @@ export default function About() {
                 width={356}
                 height={534}
                 className="h-full w-full object-cover transition hover:opacity-80"
-                sizes="(max-width: 640px) 75vw, (max-width: 767px) 75vw, (max-width: 1023px) 60vw, (max-width: 1279px) 33vw, 33vw"
+                sizes="(max-width: 640px) 33vw, (max-width: 767px) 75vw, (max-width: 1023px) 60vw, (max-width: 1279px) 30vw, (max-width:  1535px) 20vw, 20vw"
               ></Image>
             </div>
           </div>
