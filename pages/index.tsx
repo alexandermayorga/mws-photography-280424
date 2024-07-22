@@ -1,19 +1,7 @@
 import FadeInUpWhenVisible from "@/components/FadeInUpWhenVisible";
 import Layout from "@/components/Layout";
 
-import { Quattrocento_Sans, Quattrocento } from "next/font/google";
 import Head from "next/head";
-
-const quattrocento_sans = Quattrocento_Sans({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-quattrocento-sans",
-});
-const quattrocento = Quattrocento({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-quattrocento",
-});
 
 export default function Home() {
   return (
@@ -21,9 +9,7 @@ export default function Home() {
       <Head>
         <title>Home | Photography Site Template</title>
       </Head>
-      <div
-        className={`container mx-auto ${quattrocento.variable} px-8 font-serif`}
-      >
+      <div className={`container mx-auto px-8`}>
         <main className="grid h-[85vh] grid-cols-12 grid-rows-6">
           <div className="col-span-12 row-start-5 text-white md:col-span-6 md:col-start-1 md:row-start-5 lg:row-start-3">
             <FadeInUpWhenVisible

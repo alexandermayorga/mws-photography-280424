@@ -4,15 +4,9 @@ import Image from "next/image";
 import bgImg from "/public/img/gift-habeshaw-0nNOc6OAwLI-unsplash_50.jpg";
 // Pic from: https://unsplash.com/photos/man-facing-sideways-0nNOc6OAwLI
 
-import { Quattrocento_Sans } from "next/font/google";
 import Header from "./Header";
 import Head from "next/head";
-
-const quattrocento_sans = Quattrocento_Sans({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-quattrocento-sans",
-});
+import { quattrocento, quattrocento_sans } from "@/fonts/fonts";
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 100 },
@@ -33,7 +27,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         />
       </Head>
       <div
-        className={`relative min-h-screen bg-black text-white ${quattrocento_sans.variable} font-sans`}
+        className={`relative min-h-screen bg-black font-sans text-white ${quattrocento.variable} ${quattrocento_sans.variable}`}
       >
         {router.pathname === "/" && (
           <Image
